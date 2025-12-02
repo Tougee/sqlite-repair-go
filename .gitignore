@@ -1,0 +1,19 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test/Demo generated files
+*.db
+*.db-journal
+*.db-wal
+schema.json
+
+# OS specific
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
