@@ -64,3 +64,34 @@ if err != nil {
     // handle error
 }
 ```
+
+## CLI Tool
+
+You can also use the command-line tool to perform operations.
+
+### Build
+
+```bash
+go build -o sqlite-repair cmd/sqlite-repair/main.go
+```
+
+### Commands
+
+**1. Backup Schema**
+
+```bash
+./sqlite-repair backup <db_path> <schema_output_path>
+```
+
+**2. Check Integrity**
+
+```bash
+./sqlite-repair check <db_path>
+```
+
+**3. Repair Database**
+
+```bash
+./sqlite-repair repair -src <corrupt_db> -schema <schema_path> -out <output_db> [-pagesize 4096]
+```
+
